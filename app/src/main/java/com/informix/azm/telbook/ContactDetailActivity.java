@@ -73,10 +73,9 @@ public class ContactDetailActivity extends AppCompatActivity implements View.OnC
             break;
             case R.id.btnEmail:
                 Uri uri = Uri.fromParts("mailto", tvEmail.getText().toString(), null);
-                Log.d("MyLog",uri.toString());
                 intent = new Intent(Intent.ACTION_SENDTO, uri);
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                intent.putExtra(Intent.EXTRA_TEXT, "Body");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Тема");
+                intent.putExtra(Intent.EXTRA_TEXT, "Текст");
                 startActivity(Intent.createChooser(intent, "Send Email"));
             break;
         }
