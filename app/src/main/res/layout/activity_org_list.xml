@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    tools:context="com.informix.azm.telbook.MainActivity"
+    tools:context="com.informix.azm.Goverbook.MainActivity"
     android:background="#327cb4">
 
     <LinearLayout
